@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 //            loginUser("kl@k3.io", "password123");
 //        });
 
-        loginUser("kl@k3.io", "password123");
+//        loginUser("kl@k3.io", "password123");
         getUsers();
     }
 
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<User>> call, Response<List<User>> response) {
                 if (response.isSuccessful()) {
-                    System.out.println(response.body().toString());
+                    System.out.println(response.body());
                     Toast.makeText(MainActivity.this, "Logged in!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity.this, "Login failed!", Toast.LENGTH_SHORT).show();

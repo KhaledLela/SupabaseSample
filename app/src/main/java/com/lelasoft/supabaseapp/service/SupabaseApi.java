@@ -13,6 +13,6 @@ public interface SupabaseApi {
     @POST("/auth/v1/token?grant_type=password")
     Call<LoginResponse> login(@Body LoginRequest loginRequest);
 
-    @GET("/rest/v1/user")
+    @GET("/rest/v1/users")
     Call<List<User>> getYourData();  // Replace 'your_table' and 'YourDataModel' as needed
 }
